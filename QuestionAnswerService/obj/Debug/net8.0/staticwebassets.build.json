@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "SSZJJ0zNm59ELVNT6yxifhxnQfQOs8h6Vk1wCikcnks=",
+  "Source": "QuestionAnswerService",
+  "BasePath": "_content/QuestionAnswerService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
