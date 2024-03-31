@@ -24,6 +24,7 @@ try
 
 
 
+
     // Add services to the container.
 
     builder.Services.AddControllers();
@@ -61,6 +62,13 @@ try
     {
         app.UseSwagger();
         app.UseSwaggerUI();
+    }
+
+
+    using (var scope = app.Services.CreateScope())
+    {
+        var db = scope.ServiceProvider.GetRequiredService<PatientServiceContext>();
+        db.Database.Migrate();
     }
 
     app.UseHttpsRedirection();
