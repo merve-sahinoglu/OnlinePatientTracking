@@ -1,0 +1,10 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+   name: QuestionAnswer-pod
+spec:
+   containers:
+   - name: QuestionAnswer-container01
+     image: merve/QuestionAnswer:latest
+     ports:
+     - containerPort: 6379

@@ -1,0 +1,10 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+   name: notification-pod
+spec:
+   containers:
+   - name: notification-container01
+     image: merve/notification:latest
+     ports:
+     - containerPort: 6379

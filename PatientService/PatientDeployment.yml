@@ -1,0 +1,10 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+   name: patient-pod
+spec:
+   containers:
+   - name: patient-container01
+     image: merve/patient:latest
+     ports:
+     - containerPort: 6379

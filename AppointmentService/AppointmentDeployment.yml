@@ -1,0 +1,10 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+   name: appointment-pod
+spec:
+   containers:
+   - name: appointment-container01
+     image: merve/appointment:latest
+     ports:
+     - containerPort: 6379
